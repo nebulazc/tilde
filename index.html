@@ -9,10 +9,10 @@
      */
     commands: [
       {
-        name: 'DuckDuckGo',
+        name: 'Ecosia',
         key: '*',
-        url: 'https://duckduckgo.com',
-        search: '?q={}',
+        url: 'https://www.ecosia.org/',
+        search: '/search?q={}',
         color: '#333',
       },
       {
@@ -33,54 +33,11 @@
       },
       {
         category: 'Google',
-        name: 'Keep',
-        key: 'k',
-        url: 'https://keep.google.com/u/0/',
-        search: '/#search/text={}',
-        color: 'linear-gradient(135deg, #fca550, #fcd050)',
-      },
-      {
-        category: 'Work',
-        name: 'Slack',
-        key: 'ss',
-        url: 'https://app.slack.com/client/T7K3RFA1M/all-dms',
-        color: 'linear-gradient(135deg, #6ecadc, #6e7adc)',
-      },
-      {
-        category: 'Work',
-        name: 'AND.CO',
-        key: '.',
-        url: 'https://app.and.co/timers',
-        color: 'linear-gradient(135deg, #17d3aa, #1773aa)',
-      },
-      {
-        category: 'Work',
-        name: 'Asana',
-        key: 'sa',
-        url: 'https://app.asana.com/0/inbox/490539250066176',
-        color: 'linear-gradient(135deg, #3be8b0, #1aafd0)',
-      },
-      {
-        category: 'Code',
-        name: 'AWS',
-        key: 'a',
-        url: 'https://console.aws.amazon.com',
-        color: 'linear-gradient(135deg, #ff9900, #ff6400)',
-      },
-      {
-        category: 'Code',
-        name: 'GitHub',
-        key: 'g',
-        url: 'https://github.com',
-        search: '/search?q={}',
-        color: 'linear-gradient(135deg, #8ccae1, #6d8bd6)',
-      },
-      {
-        category: 'Code',
-        name: 'Local',
-        key: '0',
-        url: 'http://localhost:3000',
-        search: ':{}',
+        name: 'Maps',
+        key: 'ms',
+        url: 'https://www.google.pl/maps/',
+        search: '/maps/search/{}',
+        color: '#FFB000',
       },
       {
         category: 'Lurk',
@@ -92,27 +49,26 @@
       },
       {
         category: 'Lurk',
-        name: 'ProductHunt',
-        key: 'p',
-        url: 'https://www.producthunt.com',
+        name: 'Twitter',
+        key: 'tt',
+        url: 'https://twitter.com',
         search: '/search?q={}',
-        color: 'linear-gradient(135deg, #da552f, #da802f)',
+        color: '#1da1f2',
       },
       {
         category: 'Lurk',
-        name: 'Unsplash',
-        key: 'u',
-        url: 'https://unsplash.com/images',
-        search: '/search/{}',
-        color: '#000',
+        name: 'Zerochan',
+        key: 'z',
+        url: 'https://www.zerochan.net/',
+        search: '/search?q={}',
       },
       {
         category: 'Listen',
-        name: 'Hypem',
-        key: 'h',
-        url: 'https://hypem.com/popular',
-        search: '/search/{}',
-        color: 'linear-gradient(135deg, #83c441, #628441)',
+        name: 'YTMusic',
+        key: 'ym',
+        url: 'https://music.youtube.com/',
+        search: '/search?q={}',
+        color: 'linear-gradient(135deg, #cd201f, #8d1c1f)',
       },
       {
         category: 'Listen',
@@ -132,14 +88,6 @@
       },
       {
         category: 'Watch',
-        name: 'Netflix',
-        key: 'n',
-        url: 'https://www.netflix.com/browse',
-        search: '/search?q={}',
-        color: 'linear-gradient(135deg, #e50914, #b50009)',
-      },
-      {
-        category: 'Watch',
         name: 'YouTube',
         key: 'y',
         url: 'https://youtube.com/feed/subscriptions',
@@ -155,51 +103,33 @@
       },
       {
         category: 'Learn',
-        name: 'Egghead',
-        key: 'e',
-        url: 'https://egghead.io',
+        name: 'WolframAlpha',
+        key: 'w',
+        url: 'https://www.wolframalpha.com/',
+        search: '/input/?i={}',
+        color: '#FF7D00',
+      },
+      {
+        category: 'Learn',
+        name: 'PUT',
+        key: 'p',
+        url: 'https://elogin.put.poznan.pl/?do=Login',
+        color: '#006991',
+      },
+      {
+        category: 'Code',
+        name: 'GitHub',
+        key: 'g',
+        url: 'https://github.com',
         search: '/search?q={}',
-        color: 'linear-gradient(135deg, #171C23, #171923)',
+        color: 'linear-gradient(135deg, #8ccae1, #6d8bd6)',
       },
       {
-        category: 'Learn',
-        name: 'Coursera',
-        key: 'c',
-        url: 'https://www.coursera.org',
-        search: '/courses?query={}',
-        color: 'linear-gradient(135deg, #407ED7, #4038d7)',
-      },
-      {
-        category: 'Learn',
-        name: 'Khan',
-        key: 'K',
-        url: 'https://www.khanacademy.org',
-        search: '/search?page_search_query={}',
-        color: 'linear-gradient(135deg, #9cb443, #808443)',
-      },
-      {
-        category: 'Download',
-        name: 'TPB',
-        key: 'B',
-        url: 'https://thepiratebay.org',
-        search: '/search/{}',
-        color: 'linear-gradient(135deg, #d2b9a6, #d2c4a6)',
-      },
-      {
-        category: 'Download',
-        name: 'RARBG',
-        key: 'R',
-        url: 'https://rarbg.to/torrents.php',
-        search: '/torrents.php?search=test',
-        color: 'linear-gradient(135deg, #3870bb, #386ebb)',
-      },
-      {
-        category: 'Download',
-        name: 'YTS',
-        key: 'Y',
-        url: 'https://yts.mx/browse-movies/0/all/all/7/seeds/0/en',
-        search: '/browse-movies/{}',
-        color: 'linear-gradient(135deg, #2f2f2f, #373737)',
+        category: 'Code',
+        name: 'Local',
+        key: '0',
+        url: 'http://localhost:3000',
+        search: ':{}',
       },
     ],
 
@@ -207,7 +137,7 @@
      * Get suggestions as you type.
      */
     suggestions: true,
-    suggestionsLimit: 4,
+    suggestionsLimit: 5,
 
     /**
      * The order and limit for each suggestion influencer. An "influencer" is
@@ -233,15 +163,13 @@
      * Default search suggestions for the specified queries.
      */
     defaultSuggestions: {
-      '.': ['./inout/in/invoices/create'],
       0: ['0:8000', '0:8080'],
-      d: ['d/drive/u/1/my-drive', 'd/drive/u/2/my-drive'],
-      g: ['g/ossu'],
-      k: ['k/u/1/', 'k/u/2/'],
-      m: ['m/mail/u/1/#inbox', 'm/mail/u/2/#inbox'],
+      d: ['d/drive/u/0/my-drive'],
+      g: ['g/nebulazc'],
+      m: ['m/mail/u/0/#inbox', 'm/mail/u/1/#inbox', 'm/mail/u/2/#inbox'],
       o: ['o/you/likes', 'o/discover/the-upload'],
-      r: ['r/r/startpages', 'r/r/listentothis'],
-      ss: ['ss/client/T018S4TL7CP/all-dms'],
+      r: ['r/r/polska', 'r/r/unixporn'],
+      ym: ['ym/playlist?list=LM']
     },
 
     /**
@@ -253,7 +181,7 @@
     /**
      * Open triggered queries in a new tab.
      */
-    newTab: true,
+    newTab: false,
 
     /**
      * Use command colors when domains are matched and on the help page.
@@ -558,7 +486,7 @@
   .command a:hover .command-name::after,
   .command a:focus .command-name::after {
     transform: translateX(0);
-    opacity: 0.4;
+    opacity: 0.2;
   }
 
   body.help .help,
@@ -618,7 +546,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="robots" content="noindex" />
-<title>~</title>
+<title>⠀</title>
 
 <div class="center"><time class="clock" id="clock"></time></div>
 
@@ -629,7 +557,7 @@
   spellcheck="false"
 >
   <div>
-    <input class="search-input" id="search-input" title="search" type="text" />
+    <input class="search-input" id="search-input" title="search" type="text"/>
     <ul class="search-suggestions" id="search-suggestions"></ul>
   </div>
 </form>
